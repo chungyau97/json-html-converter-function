@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <button onclick="addCode()">Add Stuff</button>
+    <div id="add_to_me"></div>
+
+    <script>
+      var jsonExample = {
+        tag: "a",
+        href: "https://github.com/chungyau97",
+        childs: [
+          {
+            tag: "img",
+            src: "https://cdn-icons-png.flaticon.com/512/25/25231.png",
+            style:
+              "width: 10%; display: block; margin-left: auto; margin-right: auto;",
+          },
+          {
+            tag: "h3",
+            text: "Go to Chung Yau's profile",
+            style: "text-align: center",
+          },
+        ],
+      };
+
+      function json2html(jsonData) {
+        var htmlTag = "";
+        for (var key in jsonData) {
+          if (key == "tag") {
+            htmlTag = document.createElement(jsonData[key]);
+          } else if (key == "class") {
+            htmlTag.className = jsonData[key];
+          } else if (key == "text") {
+            htmlTag.innerHTML = jsonData[key];
+          } else if (key == "childs") {
+            for (var i in jsonData[key]) {
+              htmlTag.appendChild(json2html(jsonData[key][i]));
+            }
+          } else {
+            htmlTag.setAttribute(key, jsonData[key]);
+          }
+        }
+        return htmlTag;
+      }
+
+      function addCode() {
+        document.getElementById("add_to_me").append(json2html(jsonExample));
+      }
+    </script>
+  </body>
+</html>
