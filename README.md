@@ -1,7 +1,7 @@
 # json-html-converter
 
 ## About The Project
-The reason for this project is to create a template for myself to pass [VAPT](https://www.veracode.com/security/vulnerability-assessment-and-penetration-testing) when generating HTML. This converter will allow developers to input inline style, class, appendChild() and innerHTML.
+The reason for this project is to create a template for myself to pass [Checkmarx Scan](https://checkmarx.com/) when generating HTML. This converter will allow developers to input inline style, class, appendChild() and innerHTML.
 
 ### Built With
 
