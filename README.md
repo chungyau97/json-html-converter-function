@@ -1,4 +1,4 @@
-# json-html-converter
+# json-html-converter-function
 
 ## About The Project
 The reason for this project is to create a template for myself to pass [Checkmarx Scan](https://checkmarx.com/) when generating HTML. This converter will allow developers to input inline style, class, appendChild() and innerHTML.
@@ -17,15 +17,15 @@ To get a local copy up and running follow these simple steps.
 ### Steps to get the code
 1. Clone the repo
    ```sh
-   git clone https://github.com/chungyau97/json-html-converter.git
+   git clone https://github.com/chungyau97/json-html-converter-function.git
    ```
 2. Modify the ```jsonExample``` to your liking.
 3. View changes by double clicking 
    ```
-   json-html-converter.html
+   json-html-converter-function.html
    ```
    
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See [LICENSE](https://github.com/chungyau97/json-html-converter/blob/main/LICENSE) for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/chungyau97/json-html-converter-function/blob/main/LICENSE) for more information.
